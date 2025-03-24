@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #a855f7, #8b5cf6, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #a855f7;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.glass-effect {
+  background: rgba(30, 20, 60, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: linear-gradient(45deg, #a855f7, #8b5cf6, #6366f1);
+  padding: 2px;
+}
+
+.gradient-border > * {
+  background: #1e1435;
+  border-radius: 1rem;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dark-purple {
+  background-color: #1e1435;
+}
+
+.bg-darker-purple {
+  background-color: #150d28;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+
+.purple-gradient {
+  background: linear-gradient(135deg, #1e1435 0%, #2d1b4e 100%);
+}
+
+/* 🚀 Futuristic Glowing Cursor */
+.custom-cursor {
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, rgba(255, 0, 255, 0.9) 30%, rgba(255, 255, 255, 0.6) 80%);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out;
+  z-index: 9999;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8), 
+              0 0 30px rgba(255, 0, 255, 0.6), 
+              0 0 50px rgba(255, 0, 255, 0.4);
+  mix-blend-mode: difference;
+}
+
+/* 🌟 Cursor Glow Effect on Hover */
+.cursor-hover {
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.9), 
+              0 0 50px rgba(0, 255, 255, 0.7), 
+              0 0 80px rgba(0, 255, 255, 0.5);
+  background: radial-gradient(circle, rgba(0, 255, 255, 1) 30%, rgba(255, 255, 255, 0.8) 80%);
+}
+
+/* 🌌 Particle Trail Effect */
+.trail {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  background: rgba(255, 0, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  transition: transform 0.15s ease-out, opacity 0.4s ease-in-out;
+  animation: fadeOut 0.5s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.animate-glow {
+  animation: glow 1.5s infinite alternate ease-in-out;
+}
+
