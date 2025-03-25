@@ -8,7 +8,7 @@ function Projects() {
     {
       title: 'FreshCart-Hub',
       description: 'Created an all-encompassing e-commerce platform tailored for effortless online grocery shopping. The site includes a diverse product catalog, a user-friendly shopping cart, and a secure checkout process to ensure an enjoyable shopping experience.',
-      image: '../Images/Projects/cart.png',
+      image: '/Images/Projects/cart.png',
       tech: ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript'],
       github: 'https://github.com/AvaniK-2002/FreshCart-Hub',
       live: ''
@@ -16,7 +16,7 @@ function Projects() {
     {
       title: 'Object Detection',
       description: 'Leveraging deep learning models such as Faster R-CNN with TensorFlow, annotated datasets, and robust video processing to ensure accurate, efficient detection. Used Python, TensorFlow, PyTorch, OpenCV for video handling, and Roboflow for dataset annotation.',
-      image: '../Images/Projects/object.jpg',
+      image: '/Images/Projects/object.jpg',
       tech: ['Python', 'OpenCV', 'Tensorflow', 'Keras','NMS','VGG16'],
       github: 'https://github.com',
       live: ''
@@ -24,7 +24,7 @@ function Projects() {
     {
       title: 'Healthcare System',
       description: 'I developed a web-based Healthcare System using HTML, CSS, JavaScript, and Python-based machine learning models for disease prediction, achieving over 90% prediction accuracy. Integrated Google Maps API for nearby hospital searches and a secure community chat feature.',
-      image: '../Images/Projects/health.png',
+      image: '/Images/Projects/health.png',
       tech: ['HTML', 'ML', 'Python', 'JavaScript'],
       github: 'https://github.com/AvaniK-2002/Predicare',
       live: ''
@@ -32,7 +32,7 @@ function Projects() {
     {
       title: 'SpamGuard',
       description: 'Engineered an SMS spam detection website to classify messages as spam or non-spam, reaching an 85% accuracy rate and significantly enhancing user experience by filtering out spam messages.',
-      image: '../Images/Projects/spam.jpg',
+      image: '/Images/Projects/spam.jpg',
       tech: ['HTML', 'JavaScript', 'Python', 'Scikit-learn', 'CSS'],
       github: 'https://github.com/AvaniK-2002/SpamGuard',
       live: ''
@@ -40,7 +40,7 @@ function Projects() {
     {
       title: 'EventSelect-Pro',
       description: 'Developed EventMaster, a user-friendly event management website that streamlines event creation, registration, and venue selection.',
-      image: '../Images/Projects/event.png',
+      image: '/Images/Projects/event.png',
       tech: ['HTML', 'JavaScript', 'PHP', 'MySQL', 'CSS'],
       github: 'https://github.com/AvaniK-2002/EventSelect-Pro-',
       live: ''
@@ -48,7 +48,7 @@ function Projects() {
     {
       title: 'my-paintings',
       description: 'A visually appealing portfolio website showcasing my artwork, built using HTML, CSS, and JavaScript. Features include an interactive gallery, smooth animations, and a responsive design, ensuring an immersive user experience',
-      image: '../Images/Projects/Screenshot 2025-03-21 135536.png',
+      image: '/Images/Projects/Screenshot 2025-03-21 135536.png',
       tech: ['HTML', 'JavaScript',  'CSS'],
       github: 'https://github.com/AvaniK-2002/my-paintings',
       live: 'https://my-paintings.vercel.app/'

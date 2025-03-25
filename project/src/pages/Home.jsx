@@ -62,7 +62,7 @@ function Home() {
 
                 {/* 🚀 Download Resume Button */}
                 <motion.a
-                  href="../Images/AVANI_KULKARNI_8975810845.pdf" // Replace with actual resume file path
+                  href="/Images/AVANI_KULKARNI_8975810845.pdf" // Replace with actual resume file path
                   download="Avani_Kulkarni_Resume.pdf"
                   className="mt-8 inline-block px-6 py-3 text-lg font-semibold 
                              text-white bg-purple-600 rounded-lg shadow-lg 
@@ -93,7 +93,7 @@ function Home() {
 
                 {/* Extra Large Profile Image (Perfect Overlap) */}
                 <motion.img 
-                  src="../Images/images.png"  
+                  src="/Images/images.png"  
                   alt="Profile"
                   className="relative z-10 w-[420px] h-[420px] object-cover rounded-full"
                   whileHover={{ scale: 1.08 }}  // Bigger Zoom on Hover
