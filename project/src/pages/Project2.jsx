@@ -9,7 +9,7 @@ function Project2() {
       title: "Portfolio",
       description:
         "A Figma portfolio is a digital showcase of your UI/UX design work, prototypes, and case studies, highlighting your skills and creativity.",
-      image: "/Images/Projects/port.png",
+      image: "../Images/Projects/port.png",
       tech: ["Figma"],
       live: "https://www.figma.com/design/LG1Njly9Uo3aziEGimorCS/Untitled?m=auto&t=3uHTcJk3ibtlOrBN-6",
     },
@@ -17,7 +17,7 @@ function Project2() {
       title: "Pet-Health",
       description:
         "A paw-some fusion of care and creativity—where design meets devotion for happy, healthy pets!",
-      image: "/Images/Projects/pet.png",
+      image: "../Images/Projects/pet.png",
       tech: ["Canva"],
       live: "https://www.canva.com/design/DAGQwZqE2U4/qE48OojcHnHcvjvIliwmrg/edit",
     },
@@ -25,7 +25,7 @@ function Project2() {
       title: "Safety-App",
       description:
         "Empowering safety with seamless design—because every woman deserves to feel secure, always!",
-      image: "/Images/Projects/safe.png",
+      image: "../Images/Projects/safe.png",
       tech: ["Canva"],
       live: "https://www.canva.com/design/DAF9cTN1vPA/XAOIZuIPu1lBbNEmquRGXQ/edit",
     },
@@ -33,7 +33,7 @@ function Project2() {
       title: "Course-Management",
       description:
         "Streamlining learning with an intuitive course management design—where education meets innovation!",
-      image: "/Images/Projects/dashboard (1).png",
+      image: "../Images/Projects/dashboard (1).png",
       tech: ["Figma"],
       live: "https://www.figma.com/design/2p18wM9IC7zqWyydpT5q1l/Bylogin---Login-And-Register-Page-(Community)?m=auto&t=3uHTcJk3ibtlOrBN-6",
     },
@@ -41,7 +41,7 @@ function Project2() {
       title: "My-Paints",
       description:
         "Brushing creativity into pixels—an artistic portfolio that speaks through colors and strokes!",
-      image: "/Images/Projects/paint.png",
+      image: "../Images/Projects/paint.png",
       tech: ["Canva"],
       live: "https://www.canva.com/design/DAF3Wp8-CC8/1qvE-JJEjSzP873B5OAgjA/edit",
     },

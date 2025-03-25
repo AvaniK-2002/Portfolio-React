@@ -62,7 +62,7 @@ function Home() {
 
                 {/* 🚀 Download Resume Button */}
                 <motion.a
-                  href="/Images/AVANI_KULKARNI_8975810845.pdf" // Replace with actual resume file path
+                  href="../Images/AVANI_KULKARNI_8975810845.pdf" // Replace with actual resume file path
                   download="Avani_Kulkarni_Resume.pdf"
                   className="mt-8 inline-block px-6 py-3 text-lg font-semibold 
                              text-white bg-purple-600 rounded-lg shadow-lg 
