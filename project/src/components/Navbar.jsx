@@ -17,7 +17,8 @@ function Navbar() {
         
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
-          <img src="/Images/logo.png" alt="Logo" className="h-10 w-auto" />
+        <img src={`${import.meta.env.BASE_URL}Images/logo.png`} alt="Logo" 
+        className="h-10 w-auto" />
         </NavLink>
 
         {/* Desktop Menu */}

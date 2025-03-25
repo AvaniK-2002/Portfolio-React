@@ -62,17 +62,17 @@ function Home() {
 
                 {/* 🚀 Download Resume Button */}
                 <motion.a
-                  href="/Images/AVANI_KULKARNI_8975810845.pdf" // Replace with actual resume file path
-                  download="Avani_Kulkarni_Resume.pdf"
-                  className="mt-8 inline-block px-6 py-3 text-lg font-semibold 
-                             text-white bg-purple-600 rounded-lg shadow-lg 
-                             hover:bg-purple-700 transition-all duration-300 
-                             animate-glow border-2 border-purple-500"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  📄 Download Resume
-                </motion.a>
+  href={`${import.meta.env.BASE_URL}Images/AVANI_KULKARNI_8975810845.pdf`}  
+  download="Avani_Kulkarni_Resume.pdf"
+  className="mt-8 inline-block px-6 py-3 text-lg font-semibold 
+             text-white bg-purple-600 rounded-lg shadow-lg 
+             hover:bg-purple-700 transition-all duration-300 
+             animate-glow border-2 border-purple-500"
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+  📄 Download Resume
+</motion.a>
               </motion.div>
             </motion.div>
 
@@ -93,7 +93,7 @@ function Home() {
 
                 {/* Extra Large Profile Image (Perfect Overlap) */}
                 <motion.img 
-                  src="/Images/images.png"  
+                  src={`${import.meta.env.BASE_URL}Images/images.png`}    
                   alt="Profile"
                   className="relative z-10 w-[420px] h-[420px] object-cover rounded-full"
                   whileHover={{ scale: 1.08 }}  // Bigger Zoom on Hover
