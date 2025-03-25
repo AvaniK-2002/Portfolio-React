@@ -87,65 +87,61 @@
   background: linear-gradient(135deg, #1e1435 0%, #2d1b4e 100%);
 }
 
-/* 🚀 Futuristic Glowing Cursor */
+/* ✨ Default Glassy Bright Purple Cursor */
 .custom-cursor {
-  width: 18px;
-  height: 18px;
-  background: radial-gradient(circle, rgba(255, 0, 255, 0.9) 30%, rgba(255, 255, 255, 0.6) 80%);
+  width: 20px;
+  height: 20px;
+  background: rgba(186, 85, 211, 0.35); /* Bright Purple */
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.08s ease-out;
+  transition: transform 0.08s ease-out, background 0.3s, box-shadow 0.3s;
   z-index: 9999;
-  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8), 
-              0 0 30px rgba(255, 0, 255, 0.6), 
-              0 0 50px rgba(255, 0, 255, 0.4);
-  mix-blend-mode: difference;
+  backdrop-filter: blur(5px); /* Glass Effect */
+  border: 2px solid rgba(255, 0, 255, 0.6); /* Neon Purple Border */
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.6), 0 0 25px rgba(255, 20, 147, 0.5);
 }
 
-/* 🌟 Cursor Glow Effect on Hover */
+/* 🪩 On Hover - More Transparent, but Glows */
 .cursor-hover {
-  width: 35px;
-  height: 35px;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.9), 
-              0 0 50px rgba(0, 255, 255, 0.7), 
-              0 0 80px rgba(0, 255, 255, 0.5);
-  background: radial-gradient(circle, rgba(0, 255, 255, 1) 30%, rgba(255, 255, 255, 0.8) 80%);
+  width: 22px;
+  height: 22px;
+  background: rgba(186, 85, 211, 0.15); /* More Transparent */
+  backdrop-filter: blur(8px); /* Stronger Glass Effect */
+  border: 2px solid rgba(255, 0, 255, 0.8);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.8), 0 0 35px rgba(255, 20, 147, 0.6);
 }
 
-/* 🌌 Particle Trail Effect */
+/* 💫 Particle Trail Effect - Glowing */
 .trail {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   position: fixed;
-  background: rgba(255, 0, 255, 0.3);
+  background: rgba(255, 0, 255, 0.3); /* Bright Magenta */
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9998;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 0, 255, 0.5);
   transition: transform 0.15s ease-out, opacity 0.4s ease-in-out;
   animation: fadeOut 0.5s linear forwards;
 }
 
-@keyframes fadeOut {
-  0% { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(0.5); }
-}
-
+/* 🌟 Subtle Glow Animation */
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
   }
   50% {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
   }
   100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
   }
 }
 
 .animate-glow {
   animation: glow 1.5s infinite alternate ease-in-out;
 }
-
