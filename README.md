@@ -36,7 +36,7 @@ React Router – For handling navigation
 ## 🎯 Setup & Installation
 
 1️⃣ Clone the repository  
-git clone https://github.com/your-username/Portfolio-React.git  
+git clone https://github.com/AvaniK-2002/Portfolio-React.git 
 cd Portfolio-React
 
 2️⃣ Install dependencies  
