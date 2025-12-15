@@ -6,45 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/Portfolio-React/">  <!-- ✅ Essential for GitHub Pages -->
     
-    <!-- Prevent flash of unstyled content -->
-    <style>
-      body {
-        margin: 0;
-        background-color: #0a0a0a;
-        color: white;
-        font-family: system-ui, -apple-system, sans-serif;
-      }
-    </style>
-    
     <title>AvaniK | Portfolio</title>
   </head>
   <body>
-    <div id="root">
-      <!-- Initial loading content that shows immediately -->
-      <div style="
-        min-height: 100vh;
-        background-color: #0a0a0a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: system-ui, -apple-system, sans-serif;
-      ">
-        <div style="text-align: center;">
-          <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; background: linear-gradient(120deg, #a855f7, #ec4899, #a855f7); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shimmer 6s linear infinite;">
-            Hi, I'm Avani Kulkarni
-          </h1>
-          <p style="font-size: 1.25rem; color: #c084fc; margin-bottom: 1rem;">Software Developer</p>
-          <p style="font-size: 1rem; color: #d1d5db; max-width: 600px; margin: 0 auto;">Loading portfolio...</p>
-        </div>
-      </div>
-      <style>
-        @keyframes shimmer {
-          0% { background-position: 0% center; }
-          100% { background-position: 200% center; }
-        }
-      </style>
-    </div>
+    <div id="root"></div>
     <script type="module" src="src/main.jsx"></script>  <!-- ✅ Fixed path -->
   </body>
 </html>

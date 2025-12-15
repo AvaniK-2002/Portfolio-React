@@ -5,7 +5,8 @@ const Loader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // Loader disappears after 4 seconds
+    // Timeout removed - controlled by parent App component for faster loading
+    setTimeout(() => setLoading(false), 1500); // Quick fade out
   }, []);
 
   return (
