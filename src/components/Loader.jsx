@@ -5,7 +5,7 @@ const Loader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // Loader disappears after 4 seconds
+    setTimeout(() => setLoading(false), 1200); // Faster loader for Vercel deployment
   }, []);
 
   return (

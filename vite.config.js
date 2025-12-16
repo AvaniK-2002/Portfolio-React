@@ -6,5 +6,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Portfolio-React/', // Restore this for GitHub Pages
+  base: './', // Use relative paths for better Vercel deployment compatibility
 });

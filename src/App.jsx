@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     // Reduced timeout for faster loading on Vercel
-    const timer = setTimeout(() => setInitialLoad(false), 1500);
+    const timer = setTimeout(() => setInitialLoad(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
