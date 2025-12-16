@@ -1,16 +1,13 @@
 {
-  "homepage": "https://github.com/AvaniK-2002/Portfolio-React.git",
-  "name": "vite-react-typescript-starter",
+  "name": "portfolio-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
