@@ -36,16 +36,16 @@ function Home() {
           {/* LEFT CONTENT */}
           <div className="space-y-10 text-center lg:text-left">
 
-            {/* SIMPLIFIED HEADING - Faster loading */}
+            {/* STAGGERED HEADING */}
             <h1 className="text-5xl lg:text-7xl font-extrabold text-white leading-tight">
               {heading.split(" ").map((word, i) => (
                 <motion.span
                   key={i}
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
+                  initial={{ y: 30, opacity: 0, filter: "blur(6px)" }}
+                  animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
                   transition={{
-                    delay: i * 0.08, // Reduced delay for faster appearance
-                    duration: 0.5, // Reduced duration
+                    delay: i * 0.12,
+                    duration: 0.8,
                     ease: "easeOut",
                   }}
                   className={`inline-block mr-3 ${
@@ -102,34 +102,36 @@ function Home() {
           {/* RIGHT IMAGE WITH INTERACTIVITY */}
           <div className="relative flex justify-center items-center">
 
-            {/* SIMPLIFIED BASE GLOW - Less intensive */}
+            {/* BASE GLOW */}
             <motion.div
-              className="absolute w-[360px] h-[360px] rounded-full
-                         bg-purple-500/30 blur-[100px]" // Reduced opacity and blur
-              animate={{ opacity: [0.3, 0.6, 0.3] }} // Reduced range
+              className="absolute w-[360px] h-[360px] rounded-full 
+                         bg-purple-500/40 blur-[120px]"
+              animate={{ opacity: [0.5, 0.8, 0.5] }}
               transition={{
-                duration: 8, // Slower animation
+                duration: 6,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
             />
 
-            {/* SIMPLIFIED FLOATING IMAGE - Better performance */}
+            {/* FLOATING + INTERACTIVE IMAGE */}
             <motion.img
               src={`${import.meta.env.BASE_URL}Images/images.png`}
               alt="Avani Kulkarni"
-              className="relative z-10 w-[420px] h-[420px]
+              className="relative z-10 w-[420px] h-[420px] 
                          object-cover rounded-3xl cursor-pointer"
               animate={{
-                y: [0, -20, 0], // Reduced movement for better performance
+                y: [0, -28, 0],
+                x: [0, 14, 0],
+                rotate: [0, 1.5, 0],
               }}
               whileHover={{
-                scale: 1.05, // Reduced scale for smoother hover
+                scale: 1.06,
                 rotate: 0,
               }}
-              whileTap={{ scale: 0.98 }} // Reduced scale for tap
+              whileTap={{ scale: 0.97 }}
               transition={{
-                duration: 8, // Slower for less CPU usage
+                duration: 7,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
